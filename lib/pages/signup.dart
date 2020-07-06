@@ -119,7 +119,7 @@ class _SignUpState extends State<SignUp> {
                             controller: _passwordTextController,
                             validator: (value) {
                               if (value.isEmpty) {
-                                return 'Please Enter the correct password';
+                                return '* Passowrd cannot be empty';
                               } else if (value.length < 6) {
                                 return 'Password must be atleast 6 characters long';
                               }
